@@ -37,6 +37,7 @@
     transform: translate(-100%, 30%); /* Центрирование по вертикали и горизонтали */
     display: block; /* Добавил display: block; */
     z-index: 1; /* Добавил z-index: 1; */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 #text_1 {

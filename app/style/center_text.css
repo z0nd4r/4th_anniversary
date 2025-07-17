@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;    /* Центрировать по горизонтали */
+    text-align: center;      /* Центрировать текст по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    box-sizing: border-box;
+}
+
+.span_and_text{
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 160px;
+}
+
+#span{
+    font-size: 30px;
+    margin-right: 60px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#text_1 {
+    margin-left: 20px;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.hidden {
+    display: none;
+}
+
+/* Стили для анимации печатания*/
+#my_text::after {
+  content: '|'; /* добавляем символ курсора */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

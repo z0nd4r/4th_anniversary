@@ -1,0 +1,9 @@
+body {
+  min-height: 100vh;
+  font-weight: 300;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8f8da;
+}
